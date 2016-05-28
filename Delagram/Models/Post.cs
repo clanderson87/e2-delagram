@@ -10,6 +10,7 @@ namespace Delagram.Models
     {
         public int PostId { get; set; }
         public ApplicationUser CreatedBy { get; set; }
+        public string ImageUrl { get; set; }
 
         [MaxLength(140)]
         public string Caption { get; set; }

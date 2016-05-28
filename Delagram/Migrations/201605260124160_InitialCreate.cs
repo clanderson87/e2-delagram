@@ -21,6 +21,7 @@ namespace Delagram.Migrations
                 c => new
                     {
                         PostId = c.Int(nullable: false, identity: true),
+                        ImageUrl = c.String(),
                         Caption = c.String(maxLength: 140),
                         Time = c.DateTime(nullable: false),
                         CreatedBy_Id = c.String(maxLength: 128),
